@@ -1,7 +1,7 @@
 window.onload = () => {
-    fetch('https://jsonplaceholder.typicode.com/todos/', )
+    fetch('https://opendata.wifi.at/OpenJsonData.json')
         .then(response => response.json())
         .then(data => {
-            document.write(data[Math.floor(Math.random()*data.length)].title)
-        });
+            console.log(data)
+        })
 }
