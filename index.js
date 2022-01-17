@@ -1,5 +1,6 @@
 window.onload = () => {
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
+    // Datei ist ein Ausschnitt von https://opendata.wifi.at/OpenJsonData.json, da Seite keine Requests erlaubt
+    fetch('client-data.json')
         .then(response => response.json())
         .then(data => {
             console.log(data)
