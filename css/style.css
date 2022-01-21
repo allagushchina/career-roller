@@ -1,0 +1,240 @@
+html {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-size: 62.5%;
+  font-family: Lato, sans-serif;
+  scroll-behavior: smooth;
+}
+
+html body {
+  background: -webkit-gradient(linear, right bottom, left top, from(#4845ff), to(#1affcd));
+  background: linear-gradient(to left top, #4845ff, #1affcd);
+}
+
+html h1,
+html h2 {
+  color: #2c1a1a;
+}
+
+html h1 {
+  display: block;
+  font-size: 4rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html h1 button {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 2.5rem;
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+}
+
+html h2 {
+  font-size: 3rem;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.balls {
+  background-color: #a074a199;
+  border-radius: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.ball-1 {
+  width: 20vw;
+  height: 20vw;
+  bottom: -5%;
+  right: 2%;
+}
+
+.ball-2 {
+  width: 20vw;
+  height: 20vw;
+  top: 14%;
+  left: 2%;
+}
+
+#main {
+  z-index: 1000;
+  position: fixed;
+  top: 7vh;
+  bottom: 7vh;
+  left: 7vw;
+  right: 7vw;
+  overflow: scroll;
+  padding: 3rem 10rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  border-radius: 2rem;
+}
+
+#main #job-name-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main #job-name-box h2 {
+  display: block;
+}
+
+#main #job-name-box h2:first-of-type {
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+
+#main #job-name-box h2:last-of-type {
+  text-align: center;
+}
+
+#main svg {
+  width: 80%;
+  margin: 2rem 10% 0%;
+  height: auto;
+}
+
+#main svg path {
+  fill: #ffffff33;
+  stroke: white;
+}
+
+#main svg .set {
+  fill: #ff6666 !important;
+  /*#6363ad;*/
+}
+
+#main #desc {
+  display: none;
+}
+
+#main .vis {
+  display: block !important;
+}
+
+#main p {
+  display: block;
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+
+@-webkit-keyframes scroll {
+  0%,
+  100% {
+    bottom: 3rem;
+  }
+  50% {
+    bottom: 2rem;
+  }
+}
+
+@keyframes scroll {
+  0%,
+  100% {
+    bottom: 3rem;
+  }
+  50% {
+    bottom: 2rem;
+  }
+}
+
+#main #scroll {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ffffff;
+  border-radius: 1rem;
+  padding-top: 0.5rem;
+  -webkit-animation: scroll 1s infinite;
+          animation: scroll 1s infinite;
+  display: none;
+}
+
+#main #scroll img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1150px) {
+  #main svg {
+    width: 100%;
+    margin: 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  h1 {
+    font-size: 3rem !important;
+  }
+  h2 {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #main {
+    padding: 3rem;
+    top: 3vh;
+    bottom: 3vh;
+    left: 3vw;
+    right: 3vw;
+  }
+  #main #job-name-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #main #job-name-box h2 {
+    margin: 1rem 0 !important;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  h1 button {
+    margin-top: 3rem;
+    width: 7rem !important;
+    height: 7rem !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
